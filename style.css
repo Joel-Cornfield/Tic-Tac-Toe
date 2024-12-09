@@ -1,0 +1,124 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    
+    background: #f4f4f4;
+}
+  
+h1 {
+    font-family: 'Modak', cursive;
+    font-size: 3.5em;
+    color: #333;
+
+}
+  
+/* Input Container Styling */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    
+}
+  
+input[type="text"] {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    width: 250px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s ease;
+}
+  
+input[type="text"]:focus {
+    border-color: #ff7f50;
+    background: #fff8e7;
+}
+  
+/* Start Button Styling */
+button#start-btn {
+    font-family: 'Anton SC', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    background: #333;
+    padding: 0.7em 2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+  
+button#start-btn:hover {
+    background: #ff7f50;
+}
+  
+button#start-btn:active {
+    background: #ff4500;
+    transform: scale(0.95);
+}
+  
+/* Message and Board Styling */
+.message {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5em;
+    color: #555;
+    margin: 0.5rem;
+}
+  
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    gap: 5px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 5px;
+}
+  
+.cell {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+    transition: transform 0.3s ease;
+}
+  
+.cell:hover {
+    transform: scale(1.03);
+}
+
+.player-one {
+    background: #007bff; 
+    color: white;
+    transition: background 0.3s ease;
+}
+  
+.player-two {
+    background: #ff4500; 
+    color: white;
+    transition: background 0.3s ease;
+}
+
+#player1, #player2 {
+    font-family: 'Indie Flower', cursive;
+    border-radius: 5px;
+    padding: 0.1rem;
+}
+  
